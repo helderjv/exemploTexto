@@ -14,7 +14,8 @@ class jan():
         self.wdw.title("Teste Label")
         
         self.txtVar = tk.StringVar()
-        self.txtVar.set("blablabla")
+        self.texto = input()
+        self.txtVar.set(self.texto)
         
         self.labelTexto = tk.Label(self.wdw,textvariable = self.txtVar,relief= tk.FLAT)
         self.labelTexto.grid(row = 1, column = 1)
